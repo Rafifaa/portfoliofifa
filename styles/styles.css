@@ -1,0 +1,244 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+
+body{
+    font-family: system-ui;
+    overflow-x: hidden ;
+}
+
+header{
+    background: url(/img/planet.jpg);
+    width: 100%;
+}
+button{
+    background: transparent;
+    border-radius: 60px;
+    padding: 10px 40px;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.image{
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 16/9;
+    background: black;
+}
+
+.imagee{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* name */
+
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: larger;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(229, 225, 225);
+}
+
+h1{
+    opacity: 0;
+    transform: translateY(20px);
+    display: inline-block;
+    animation: animation 5s forwards;
+}
+
+@keyframes animation{
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+p span{
+    opacity: 0;
+    transform: translateY(20px);
+    display: inline-block;
+    animation: slideup 7s forwards;
+}
+
+@keyframes slideup {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fifa{
+    color: white;
+    text-shadow: 2px 2px 5px 3px black;
+}
+.clik{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: transparent;
+    margin: 30px;
+    padding: 10px 40px;
+    border-radius: 60px;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    box-shadow: 0 0 9px 4px gray;
+}
+
+/* À propos */
+
+.About{
+    background: url(/img/copilot_image_1772976095533.jpeg);
+    background-position: 37dvh;
+    height: 100vh;
+    padding: 50px 0;
+    color: aliceblue;
+}
+.images{
+    width: 30%;
+    
+}
+.images img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    padding: 0 0 0 50px;
+    border-radius: 46% 0 30%;
+}
+
+.About-A{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 50px;
+
+}
+
+.a{
+    width: 20%;
+}
+
+.b{
+    margin:0 120px;
+    width: 60%;
+}
+
+/* projet */
+
+.About-B{
+    display: flex;
+    margin-inline: auto;
+    padding: 45px 0 0 50px;
+}
+
+.a1{
+    width: 20%;
+}
+
+.b1{
+    margin: 0 0 0 100px;
+    width: 60%;
+}
+
+/* compétences */
+.skills{    
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: 70px 0;
+    background: url(/img/logoKali.jpeg);
+    background-position: 160px;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.c{
+    display: flex;
+}
+
+.skill-A{
+    width: 20%;
+}
+
+/* contact */
+
+.tel{
+    background: url(/img/kaliim.jpeg);
+    background-position: 120px -300px;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 90px 0;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e{
+    padding: 20px;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+/* footer */
+
+footer{
+    background: rgb(0, 0, 0);
+    padding: 10px ;
+    color: rgb(58, 102, 147);
+    height: 5vh;
+    text-align: center;
+}
+
+@media (max-width:760px) {
+    header{
+        width: 225%;
+    }   
+    .image{
+        width: 225%;
+    }
+    .name{
+        position: absolute;
+        top: 50%;
+        left: 115%;
+    }
+    .About{
+        background-position: center;
+        width: 145%;
+    }
+    .About-A{e
+        background-position: center;
+        width: 150%;
+    }
+    .images img{
+        border-radius: 0 30px;
+        width: 100%;
+    }
+    .About-B{
+        background-position: center;
+        width: 127%;
+    }
+    .skills{
+        width: 225%;
+    }
+
+    .skill-A{
+        background-position: center;
+    }
+    
+    .tel{
+        background-position: center;
+        width: 100%;
+    }
+
+    .tel{
+        background-position: center;
+        width: 225%;
+    }
+
+    footer{
+        width: 220%;
+    }
+}
