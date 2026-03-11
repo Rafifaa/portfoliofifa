@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    background: url(/img/planet.jpg);
+    background: url(../img/planet.jpg);
     width: 100%;
 }
 button{
@@ -91,7 +91,7 @@ p span{
 /* À propos */
 
 .About{
-    background: url(/img/copilot_image_1772976095533.jpeg);
+    background: url(../img/copilot_image_1772976095533.jpeg);
     background-position: 37dvh;
     height: 100vh;
     padding: 50px 0;
@@ -148,7 +148,7 @@ p span{
     max-width: 1100px;
     margin-inline: auto;
     padding: 70px 0;
-    background: url(/img/logoKali.jpeg);
+    background: url(../img/logoKali.jpeg);
     background-position: 160px;
     background-repeat: no-repeat;
     height: 100vh;
@@ -165,7 +165,7 @@ p span{
 /* contact */
 
 .tel{
-    background: url(/img/kaliim.jpeg);
+    background: url(../img/kaliim.jpeg);
     background-position: 120px -300px;
     color: aliceblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
